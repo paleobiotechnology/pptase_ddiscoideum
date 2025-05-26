@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TrackMate version="7.12.1">
+  <Settings>
+    <ImageData filename="exp2_wt.tif" folder="D:\Local\Image_processing\20240302_DiSfp_chemotaxis_cAMP\data\bf_cp_merged\" width="1250" height="2800" nslices="1" nframes="1081" pixelwidth="1.0" pixelheight="1.0" voxeldepth="1.0" timeinterval="1.0" />
+    <BasicSettings xstart="0" xend="1249" ystart="0" yend="2799" zstart="0" zend="0" tstart="0" tend="1080" />
+    <DetectorSettings DETECTOR_NAME="LABEL_IMAGE_DETECTOR" TARGET_CHANNEL="1" SIMPLIFY_CONTOURS="true" />
+    <InitialSpotFilter feature="QUALITY" value="-635.538961038961" isabove="true" />
+    <SpotFilterCollection />
+    <TrackerSettings TRACKER_NAME="SPARSE_LAP_TRACKER" CUTOFF_PERCENTILE="0.9" ALTERNATIVE_LINKING_COST_FACTOR="1.05" BLOCKING_VALUE="Infinity">
+      <Linking LINKING_MAX_DISTANCE="40.0">
+        <FeaturePenalties />
+      </Linking>
+      <GapClosing ALLOW_GAP_CLOSING="true" GAP_CLOSING_MAX_DISTANCE="50.0" MAX_FRAME_GAP="5">
+        <FeaturePenalties />
+      </GapClosing>
+      <TrackSplitting ALLOW_TRACK_SPLITTING="false" SPLITTING_MAX_DISTANCE="15.0">
+        <FeaturePenalties />
+      </TrackSplitting>
+      <TrackMerging ALLOW_TRACK_MERGING="false" MERGING_MAX_DISTANCE="15.0">
+        <FeaturePenalties />
+      </TrackMerging>
+    </TrackerSettings>
+    <TrackFilterCollection />
+    <AnalyzerCollection>
+      <SpotAnalyzers>
+        <Analyzer key="Manual spot color" />
+        <Analyzer key="Spot intensity" />
+        <Analyzer key="Spot contrast and SNR" />
+        <Analyzer key="Spot fit 2D ellipse" />
+        <Analyzer key="Spot 2D shape descriptors" />
+      </SpotAnalyzers>
+      <EdgeAnalyzers>
+        <Analyzer key="Directional change" />
+        <Analyzer key="Edge speed" />
+        <Analyzer key="Edge target" />
+        <Analyzer key="Edge location" />
+        <Analyzer key="Manual edge color" />
+      </EdgeAnalyzers>
+      <TrackAnalyzers>
+        <Analyzer key="Branching analyzer" />
+        <Analyzer key="Track duration" />
+        <Analyzer key="Track index" />
+        <Analyzer key="Track location" />
+        <Analyzer key="Track speed" />
+        <Analyzer key="Track quality" />
+        <Analyzer key="Track motility analysis" />
+      </TrackAnalyzers>
+    </AnalyzerCollection>
+  </Settings>
+</TrackMate>
