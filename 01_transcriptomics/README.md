@@ -29,7 +29,3 @@ Differential expression analysis was performed with the nf-core differentialabun
 The resulting tables of differential gene expression serve as input for the R notebook in this folder.
 
 ---
-
-## Output
-
-Provides the basis for transcriptomic figures, including dimensionality reduction, differential expression, and GO term enrichment.
