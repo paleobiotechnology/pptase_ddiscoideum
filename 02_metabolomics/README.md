@@ -27,9 +27,6 @@ The analysis includes differential abundance, classification of absent features 
 - `02_data/tables/`  
   Sample metadata (`samplelist.xlsx`, `grouplist.xlsx`) used throughout the analysis.
 
-- `04_results/tables/`  
-  Final annotated feature table used in the manuscript and supplementary files.
-
 ---
 
 ## Data processing
