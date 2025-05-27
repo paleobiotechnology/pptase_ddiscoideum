@@ -1,6 +1,6 @@
 # Transcriptomic analysis
 
-Analysis of gene expression differences and Gene Ontology enrichment between wild-type and disfp⁻ *Dictyostelium discoideum* across developmental stages.
+Analysis and visualization of gene expression differences and Gene Ontology enrichment between wild-type and disfp⁻ *Dictyostelium discoideum* across developmental stages.
 
 ---
 
