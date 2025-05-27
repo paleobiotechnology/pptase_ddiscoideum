@@ -1,4 +1,3 @@
-# pptase_ddiscoideum
 
 This repository contains scripts, meta data tables, and environments used in the study:  
 **"Global analysis of polyketide synthase functions in social amoeba"**  
