@@ -9,7 +9,7 @@ This repository accompanies a research manuscript currently under review and may
 
 ---
 
-## Repository structure
+## Overview
 
 - `00_env/`  
   Environment files for reproducibility of R analyses.
