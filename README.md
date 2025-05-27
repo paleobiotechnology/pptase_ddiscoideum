@@ -1,6 +1,6 @@
 # pptase_ddiscoideum
 
-This repository contains all scripts, data tables, and environments used in the study:  
+This repository contains scripts, meta data tables, and environments used in the study:  
 **"Global analysis of polyketide synthase functions in social amoeba"**  
 by Guenther et al., 2025 (submitted).
 
@@ -38,4 +38,4 @@ These materials are intended to support reproducibility and provide insight into
 
 ## Citation
 
-If you use these materials, please cite the corresponding publication once available.
+If you use these materials, please cite the corresponding publication.
