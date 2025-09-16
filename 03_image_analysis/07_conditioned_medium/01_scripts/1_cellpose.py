@@ -1,11 +1,11 @@
 # ╭────────────────────────────────────────────────────────────────────────────╮
 # │                        01_cellpose.py                                      │
-# │ Batch segmentation of TIFF images using Cellpose (cyto3 model).            │
+# │ Batch segmentation of TIFF images using Cellpose (cyto2 model).            │
 # │ Scans input folders, prepares output dirs, and runs inference.             │
 # ╰────────────────────────────────────────────────────────────────────────────╯
 
 """
-- Batch segmentation of brightfield TIFF images using Cellpose (cyto3 model)
+- Batch segmentation of TIFF images using Cellpose (cyto2 model)
 - Cleans or creates corresponding output directories
 - Saves predicted masks as uint16 TIFF files
 
@@ -25,23 +25,23 @@ import tifffile as tiff
 from cellpose import models, io
 
 # User-configurable settings
-root_dir = Path("/path/to/03_image_analysis/06_growth_at_28/02_data/img/focus")
-model_type = "cyto3"
-diameter = 35
+root_dir = Path("/path/to/03_image_analysis/07_conditioned_medium/02_data/img/input")
+model_type = "cyto2"
+diameter = 70
 cellprob_threshold = 0.0
 flow_threshold = 0.4
-use_gpu = False
+use_gpu = True
 
 # Scan for .tif files
 input_files = sorted([str(p) for p in root_dir.rglob("*.tif")])
 
-# Generate matching output paths
+# Generate output paths by replacing 'input' with 'cp' and adding suffix
 output_files = [
-    s.replace("/focus/", "/cp/").replace(".tif", "_cp.tif")
+    s.replace("/input/", "/cp/").replace(".tif", "_cp.tif")
     for s in input_files
 ]
 
-# Prepare/clean output directories
+# Prepare and clean output directories
 for directory in {os.path.dirname(p) for p in output_files}:
     if os.path.exists(directory):
         for file in os.listdir(directory):
@@ -58,11 +58,12 @@ for directory in {os.path.dirname(p) for p in output_files}:
         os.makedirs(directory)
         print(f"Created directory: {directory}")
 
-# Run Cellpose model
+# Initialize Cellpose model
 start_time = time.time()
 model = models.Cellpose(gpu=use_gpu, model_type=model_type)
 progress = tqdm(total=len(input_files), desc="Processing", unit="image", dynamic_ncols=True)
 
+# Run segmentation
 for i, image_path in enumerate(input_files):
     try:
         img = io.imread(image_path)
@@ -86,7 +87,7 @@ for i, image_path in enumerate(input_files):
 
 progress.close()
 
-# Print total time taken
+# Print total time
 total = time.time() - start_time
 th, tr = divmod(total, 3600)
 tm, ts = divmod(tr, 60)
