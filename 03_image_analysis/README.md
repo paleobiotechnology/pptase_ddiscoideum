@@ -22,9 +22,13 @@ Assays:
   Measures fluid uptake via high-throughput analysis of fluorescence stacks.
 - `02_chemotaxis_towards_cAMP/`  
   Quantifies directional migration in response to cAMP gradients.
-- `03_axenic_xenic_growth/`, `06_growth_at_28C/`  
-  Assess growth under different temperature conditions.
+- `03_axenic_xenic_growth/`  
+  Compares growth under axenic vs. xenic conditions.
 - `04_axenic_migration/`  
   Tracks cell movement under axenic conditions (HL5 medium).
 - `05_pufa_feeding/`  
   Evaluates phenotypic rescue by fatty acid supplementation.
+- `06_growth_at_28C/`  
+  Assesses growth at elevated temperature (28 °C).
+- `07_conditioned_medium/` 
+  Tests growth in conditioned versus control medium.

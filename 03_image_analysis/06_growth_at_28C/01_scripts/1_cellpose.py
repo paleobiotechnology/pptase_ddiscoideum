@@ -25,7 +25,7 @@ import tifffile as tiff
 from cellpose import models, io
 
 # User-configurable settings
-root_dir = Path("/path/to/03_image_analysis/05_pufa_feeding/02_data/img/input")
+root_dir = Path("/path/to/03_image_analysis/06_growth_at_28C/02_data/img/input")
 model_type = "cyto2"
 diameter = 70
 cellprob_threshold = 0.0
