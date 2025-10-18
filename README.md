@@ -1,6 +1,7 @@
 
 This repository contains scripts, meta data tables, and environments used in the study:  
-**"Global analysis of polyketide synthase functions in social amoeba"**  
+**"Global profiling of polyketide synthases in 
+facultative multicellular eukaryotes"**  
 by Guenther et al., 2025 (submitted).
 
 The study investigates the physiological, transcriptomic, and metabolomic consequences of a phosphopantetheinyl transferase (DiSfp) knockout in *Dictyostelium discoideum*, revealing the essential role of polyketide synthases (PKSs) in amoeba development and metabolism.
