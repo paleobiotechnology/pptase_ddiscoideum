@@ -6,8 +6,6 @@ by Guenther et al., 2025 ([doi](https://doi.org/10.1073/pnas.2515852122)).
 
 The study investigates the physiological, transcriptomic, and metabolomic consequences of a phosphopantetheinyl transferase (DiSfp) knockout in *Dictyostelium discoideum*, revealing the role of polyketide synthases (PKSs) in amoeba development and metabolism.
 
-This repository accompanies a research manuscript currently under review and may be updated prior to final publication.
-
 ---
 
 ## Overview
